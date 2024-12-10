@@ -9,7 +9,7 @@ body {
   max-width: 1200px;
   margin: 30px auto;
   padding: 20px;
-  background-color: #F3f3cc;
+  background-image: linear-gradient(to bottom, #6A0DAD, #A5698D, #9B59B6);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -32,16 +32,16 @@ body {
 }
 .cocktail-info h2 {
   font-size: 2.5em;
-  color: #d1e231;
+  color: #F2F4F4;
   margin-bottom: 20px;
 }
 .cocktail-info p {
   font-size: 1.2em;
   line-height: 1.6;
-  color: rgb(58, 49, 49);
+  color: #D6EAF8;
 }
 .ingredients {
-  background-color: rgba(255, 255, 255, 0.305);
+  background-image: linear-gradient(to bottom, #4B0082, #3D0C11, #2C2C2C);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -50,7 +50,7 @@ body {
 .ingredients h3 {
   font-size: 1.8em;
   margin-bottom: 15px;
-  color: #40E0D0;
+  color: #F2F4F4;
 }
 
 .ingredients ul {
@@ -59,7 +59,7 @@ body {
 .ingredients ul li {
   margin-bottom: 10px;
   font-size: 1.1em;
-  color: #333333;
+  color: #AED6F1;
 }
 @media (max-width: 768px) {
   .cocktail-container {
@@ -77,14 +77,14 @@ body {
 }
 .review  h2{
   font-size: 25px;
-  color: #40E0D0;
+  color: #C70039;
 }
 .review  p{
   font-size: 25px;
-  color: #FFD700;
+  color: #E74C3C;
 }
 .btn {
-  background-color: #32CD32;
+  background-image: linear-gradient(to right, #F8C8DC, #E9B0D6, #F5B7C9);
   color: #333333;
   padding: 15px 25px;
   font-size: 1.2em;
@@ -97,5 +97,5 @@ body {
   transition: background-color 0.3s;
 }
 .btn:hover {
-  background-color: #DFFF00;
+  background-image: linear-gradient(to bottom, #A569BD, #E9B0D6, #9B59B6);
 }
