@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Launch PWA",
+        "url": "http://localhost:5500",
+        "webRoot": "${workspaceFolder}",
+        "runtimeExecutable": "chrome",
+        "runtimeArgs": ["--remote-debugging-port=9222"]
+      }
+    ]
+  }
+  

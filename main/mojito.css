@@ -28,7 +28,7 @@ body {
     max-width: 79vw;
     margin: 2vw auto;
     padding: 1.3vw;
-    background-image: linear-gradient(to bottom, #4B0082, #3D0C11, #2C2C2C);
+    background-image: linear-gradient(to bottom, #98FB98, #BFFF00, #D0F0C0);
     border-radius: 1vw;
     box-shadow: 0 0.6vw 1.3vw rgba(0, 0, 0, 0.5);
     display: flex;
@@ -60,18 +60,18 @@ body {
   
   .cocktail-info h2 {
     font-size: 3em;
-    color: #F2F4F4;
+    color: #C0C0C0;
     margin-bottom: 1.7vh;
     text-shadow: 0.1vw 0.1vw 0.6vw rgba(0, 0, 0, 0.8);
   }
   
   .cocktail-info p {
     font-size: 1.2em;
-    color: #E8DAEF;
+    color: #4A4A4A;
   }
   
   .ingredients {
-    background-image: linear-gradient(to bottom, #6c08b3, #9133b6, #9B59B6);
+    background-image: linear-gradient(to bottom, #66D3FA, #E0F8F7, #FFFFFF);
     padding: 1.6vw;
     border-radius: 0.6vw;
     box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.3);
@@ -91,11 +91,11 @@ body {
   .ingredients ul li {
     margin-bottom: 0.9vh;
     font-size: 1.1em;
-    color: #AED6F1;
+    color: #4A4A4A;
   }
   
   .btn {
-    background-color: #E9B0D6;
+    background-color: #6AB547;
     color: #333333;
     padding: 1vw 1.6vw;
     font-size: 1.2em;
@@ -109,19 +109,19 @@ body {
   }
   
   .btn:hover {
-    background-color: #E8DAEF;
+    background-color: #A4DE02;
     transform: scale(1.05);
   }
   
   .review h2 {
     font-size: 1.8em;
-    color: #F1948A;
+    color: #5E5E5E;
     margin: 0.6vw 0;
   }
   
   .review p {
     font-size: 1.5em;
-    color: #F5B7B1;
+    color: #E3C567;
   }
   
   @media (max-width: 50.5vw) {

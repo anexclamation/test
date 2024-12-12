@@ -28,7 +28,7 @@ hr {
   max-width: 79vw;
   margin: 2vw auto;
   padding: 1.3vw;
-  background-image: linear-gradient(to bottom, #4B0082, #3D0C11, #2C2C2C);
+  background-image: linear-gradient(to bottom, #FFD700, #FFB347, #FF4500);
   border-radius: 1vw;
   box-shadow: 0 0.6vw 1.3vw rgba(0, 0, 0, 0.5);
   display: flex;
@@ -60,18 +60,18 @@ hr {
 
 .cocktail-info h2 {
   font-size: 3em;
-  color: #F2F4F4;
+  color: #FFFFFF;
   margin-bottom: 1.7vh;
   text-shadow: 0.1vw 0.1vw 0.6vw rgba(0, 0, 0, 0.8);
 }
 
 .cocktail-info p {
   font-size: 1.2em;
-  color: #E8DAEF;
+  color: #333333;
 }
 
 .ingredients {
-  background-image: linear-gradient(to bottom, #6c08b3, #9133b6, #9B59B6);
+  background-image: linear-gradient(to bottom, #FFB347, #FF8C69, #FF5349);
   padding: 1.6vw;
   border-radius: 0.6vw;
   box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.3);
@@ -81,7 +81,7 @@ hr {
 .ingredients h3 {
   font-size: 2em;
   margin-bottom: 1.3vh;
-  color: #F8F9F9;
+  color: #000000;
 }
 
 .ingredients ul {
@@ -91,11 +91,11 @@ hr {
 .ingredients ul li {
   margin-bottom: 0.9vh;
   font-size: 1.1em;
-  color: #AED6F1;
+  color: #464646;
 }
 
 .btn {
-  background-color: #E9B0D6;
+  background-color: #FF8C69;
   color: #333333;
   padding: 1vw 1.6vw;
   font-size: 1.2em;
@@ -109,19 +109,19 @@ hr {
 }
 
 .btn:hover {
-  background-color: #E8DAEF;
+  background-color: #FFFFFF;
   transform: scale(1.05);
 }
 
 .review h2 {
   font-size: 1.8em;
-  color: #F1948A;
+  color: #FFD700;
   margin: 0.6vw 0;
 }
 
 .review p {
   font-size: 1.5em;
-  color: #F5B7B1;
+  color: #FFFFFF;
 }
 
 @media (max-width: 50.5vw) {
