@@ -46,7 +46,7 @@ hr {
 }
 
 .cocktail-container img:hover {
-  transform: scale(1.05);
+  transform: scale(10.5);
 }
 
 .cocktail-info {
@@ -114,14 +114,17 @@ hr {
 }
 
 .review h2 {
+  width: 6vw;
+  display: block;
   font-size: 1.8em;
-  color: #FFD700;
+  color: #F1948A;
   margin: 0.6vw 0;
 }
 
 .review p {
+  width: 8vw;
   font-size: 1.5em;
-  color: #FFFFFF;
+  color: #F5B7B1;
 }
 
 @media (max-width: 50.5vw) {
@@ -164,6 +167,18 @@ hr {
   z-index: 1;
   transition: all 0.5s ease;
 }
+
+/* 클릭 시 이미지 고정 (클릭 상태 유지) */
+.opacity.clicked .blur_image {
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.opacity.clicked .img_text {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .opacity:hover .blur_image {
   filter: blur(0px);
   opacity: 1;
@@ -172,4 +187,33 @@ hr {
 .opacity:hover .img_text {
   opacity: 0;
   visibility: hidden;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+.button button {
+  margin-left: 1.5vw;
+  text-align: center;
+  background-color: #F5F5DC;
+  border: none;
+  padding: 10px 20px;
+  color: #464646;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);  
+}
+
+.button button:hover {
+  transform: scale(1.05);
+  background-color: #FFDAB9; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);  
+}
+
+.button button:active {
+  transform: translateY(2px); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
 }

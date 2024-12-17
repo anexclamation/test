@@ -114,14 +114,18 @@ body {
   }
   
   .review h2 {
+    width: 6vw;
+    display: block;
     font-size: 1.8em;
-    color: #5E5E5E;
+    color: #F1948A;
     margin: 0.6vw 0;
   }
   
   .review p {
+    width: 8vw;
+    display: block;
     font-size: 1.5em;
-    color: #E3C567;
+    color: #F5B7B1;
   }
   
   @media (max-width: 50.5vw) {

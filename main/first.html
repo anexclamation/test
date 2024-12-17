@@ -2,9 +2,36 @@
 <html lang="ko">
 <head>
     <link rel="stylesheet" href="first.css">
+    <script src="cocktail.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>칵테일 설명 페이지</title>
+
+    <style>
+        /* 슬라이드 페이지 이동 애니메이션 */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            transition: transform 0.3s ease-out; /* 페이지 전환을 부드럽게 하기 위한 설정 */
+        }
+
+        .transition-slide {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            z-index: 100;
+            transform: translateX(100%);
+            transition: transform 1s ease-in-out; /* 부드러운 슬라이드 효과 */
+        }
+
+        .transition-slide.show {
+            transform: translateX(0);
+        }
+    </style>
 </head>
 <body>
 
@@ -12,10 +39,9 @@
         칵테일 레시피
         <hr>
     </header>
-
     <div class="cocktail-container">
         <div class="cocktail-info">
-            <h2>처음처럼 선라이즈 (The First Sunrise)</h2>
+            <h2>처음처럼 선라이즈 <br>(The First Sunrise)</h2>
             <p>처음처럼 선라이즈는 소주의 깔끔함과 오렌지 주스의 달콤함이 어우러진 뒤, 그레나딘 시럽이 더해져 상큼하고 시각적으로도 화려한 칵테일입니다. 가볍고 과일 향이 돋보여 누구나 부담 없이 즐길 수 있습니다.</p>
             <div class="ingredients">
                 <h3>주요 재료</h3>
@@ -30,12 +56,37 @@
         </div>
 
         <div class="cocktail-image review">
-            <div class="opacity"><img src="C:\Users\User\Desktop\html\image\first.webp"  class="blur_image" alt="카시스 프라페">
-            <h1 class="img_text">AI가 만든 사진입니다.</h1></div>
-            <h2 >난이도</h2><p> ★★★★☆</p>
-            <h2>맛</h2><p> ★★★★☆</p>
+            <div class="opacity">
+                <img src="C:\Users\User\Desktop\html\image\first.webp" class="blur_image" alt="카시스 프라페">
+                <h1 class="img_text">AI가 만든 사진입니다.</h1>
+            </div>
+            <h2>난이도</h2><p> ★★★★☆</p>
+            <h2>맛</h2><div class="button">
+                <p> ★★★★☆</p>
+                <a href="#" id="btnTransition"><button>만드는 방법 보기</button></a>
+            </div>
         </div>
     </div>
 
+    <!-- 슬라이드 애니메이션을 위한 div -->
+    <div class="transition-slide" id="slideTransition"></div>
+
+    <script>
+        // 슬라이드 효과를 위한 JavaScript
+        const button = document.getElementById('btnTransition');
+        const slideTransition = document.getElementById('slideTransition');
+
+        button.addEventListener('click', function (event) {
+            event.preventDefault(); // 기본 링크 동작을 막음
+
+            // 슬라이드 애니메이션을 보여줌
+            slideTransition.classList.add('show');
+
+            // 애니메이션이 끝난 후 페이지 이동
+            setTimeout(function () {
+                window.location.href = 'status.html';  // 새로운 페이지로 이동
+            }, 1000); // 슬라이드 애니메이션이 끝나는 시간(1초)
+        });
+    </script>
 </body>
 </html>

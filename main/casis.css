@@ -114,17 +114,21 @@ hr {
 }
 
 .review h2 {
+  width: 6vw;
+  display: block;
   font-size: 1.8em;
   color: #F1948A;
   margin: 0.6vw 0;
 }
 
 .review p {
+  width: 8vw;
+  display: block;
   font-size: 1.5em;
   color: #F5B7B1;
 }
 
-@media (max-width: 50.5vw) {
+@media (max-width: 768px) {
   .cocktail-container {
     flex-direction: column;
     align-items: center;
@@ -132,14 +136,15 @@ hr {
 
   .cocktail-info {
     max-width: 100%;
-    padding: 1.3vw;
+    padding: 2vw;
   }
 
   .cocktail-container img {
     width: 100%;
-    margin-bottom: 1.7vh;
+    margin-bottom: 2vh;
   }
 }
+
 
 .opacity {
   position: relative;
