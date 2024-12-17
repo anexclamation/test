@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>처음처럼 선라이즈 만들기</title>
+    <link rel="stylesheet" href="test.css"> 
+    <link rel="stylesheet" href="status.css"> 
+    <style>
+        /* 슬라이드 페이지 이동 애니메이션 */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            transition: transform 0.3s ease-out; /* 페이지 전환을 부드럽게 하기 위한 설정 */
+        }
+
+        .transition-slide {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            z-index: 100;
+            transform: translateX(100%);
+            transition: transform 1s ease-in-out; /* 부드러운 슬라이드 효과 */
+        }
+
+        .transition-slide.show {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="flip-card" id="top">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <header>
+                    칵테일 레시피
+                    <hr>
+                </header>
+                <div class="cocktail-container">
+                    <div class="cocktail-info">
+                        <h2>처음처럼 선라이즈 <br>(The First Sunrise)</h2>
+                        <p>처음처럼 선라이즈는 소주의 깔끔함과 오렌지 주스의 달콤함이 어우러진 뒤, 그레나딘 시럽이 더해져 상큼하고 시각적으로도 화려한 칵테일입니다. 가볍고 과일 향이 돋보여 누구나 부담 없이 즐길 수 있습니다.</p>
+                        <div class="ingredients">
+                            <h3>주요 재료</h3>
+                            <ul>
+                                <li>소주</li>
+                                <li>오렌지 주스</li>
+                                <li>그레나딘 시럽</li>
+                            </ul>
+                        </div>
+            
+                        <a href="main.html" class="btn">더 많은 칵테일 보기</a>
+                    </div>
+            
+                    <div class="cocktail-image review">
+                        <div class="opacity">
+                            <img src="C:\Users\User\Desktop\html\image\first.webp" class="blur_image" alt="카시스 프라페">
+                            <h1 class="img_text">AI가 만든 사진입니다.</h1>
+                        </div>
+                        <h2>난이도</h2><p> ★★★★☆</p>
+                        <h2>맛</h2><div class="button">
+                            <p> ★★★★☆</p>
+                            <a href="#top"><button id="flipButton">만드는 방법 보기</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <div class="status">
+                    <h2 style="text-align: center;">처음처럼 선라이즈 만들기</h2>
+                    <div class="accordion-item">
+                        <button class="accordion">1단계: 재료 준비</button>
+                        <div class="panel">
+                            <p>처음처럼, 오렌지 주스, 그레나딘 시럽, 얼음 을 준비합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion">2단계: 처음처럼과 오렌지 주스 붓기</button>
+                        <div class="panel">
+                            <ol>
+                                <li>얼음이 담긴 잔에 처음처럼 45ml를 붓는다.</li>
+                                <li>이어서 오렌지 주스 120ml를 천천히 부어준다.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion">3단계: 그레나딘 시럽 추가하기</button>
+                        <div class="panel">
+                            <p>
+                                <span class="tooltip">그레나딘 시럽 15ml
+                                    <span class="tooltip-text">그레나딘 시럽은 무겁기 때문에 아래로 가라앉으면서 자연스럽게 붉은색 그러데이션을 만듭니다.</span>
+                                </span>
+                                를 잔 가장자리를 따라 천천히 붓는다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion">4단계: 장식하기</button>
+                        <div class="panel">
+                            <ul>
+                                <li>시럽이 자연스럽게 퍼지도록 젓지 말고 그대로 두세요.</li>
+                                <li>스푼을 사용해 아주 살짝만 저으면 부드러운 그라데이션이 더 잘 나옵니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button id="flipb">칵테일 설명 보기</button>
+            </div>
+        </div>
+    </div> 
+
+    <script src="test.js"></script>
+</body>
+</html>

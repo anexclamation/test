@@ -1,0 +1,266 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png');
+  background-color: #0d0d0d;
+  color: white;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Playfair Display', serif;
+  color: #F8C8DC;
+  padding: 1.3vw 0;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  border: none;
+  height: 0.1vh;
+  background-color: #E9B0D6;
+  margin: 0.6vw auto;
+  width: 50%;
+}
+
+.cocktail-container {
+  max-width: 79vw;
+  margin: 2vw auto;
+  padding: 1.3vw;
+  background-image: linear-gradient(to bottom, #FFD700, #FFB347, #FF4500);
+  border-radius: 1vw;
+  box-shadow: 0 0.6vw 1.3vw rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.cocktail-container img {
+  border-radius: 1vw;
+  width: 100%;
+  max-width: 33vw;
+  box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.cocktail-container img:hover {
+  transform: scale(1.05);
+}
+
+.cocktail-info {
+  max-width: 40vw;
+  padding: 2vw;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cocktail-info h2 {
+  font-size: 3em;
+  color: #FFFFFF;
+  margin-bottom: 1.7vh;
+  text-shadow: 0.1vw 0.1vw 0.6vw rgba(0, 0, 0, 0.8);
+}
+
+.cocktail-info p {
+  font-size: 1.2em;
+  color: #333333;
+}
+
+.ingredients {
+  background-image: linear-gradient(to bottom, #FFB347, #FF8C69, #FF5349);
+  padding: 1.6vw;
+  border-radius: 0.6vw;
+  box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.3);
+  margin-top: 2.5vh;
+}
+
+.ingredients h3 {
+  font-size: 2em;
+  margin-bottom: 1.3vh;
+  color: #000000;
+}
+
+.ingredients ul {
+  padding-left: 1.3vw;
+}
+
+.ingredients ul li {
+  margin-bottom: 0.9vh;
+  font-size: 1.1em;
+  color: #464646;
+}
+
+.btn {
+  background-color: #FF8C69;
+  color: #333333;
+  padding: 1vw 1.6vw;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 0.3vw;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2.6vh;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #FFFFFF;
+  transform: scale(1.05);
+}
+
+.review h2 {
+  width: 6vw;
+  display: block;
+  font-size: 1.8em;
+  color: #F1948A;
+  margin: 0.6vw 0;
+}
+
+.review p {
+  width: 8vw;
+  font-size: 1.5em;
+  color: #F5B7B1;
+}
+
+@media (max-width: 50.5vw) {
+  .cocktail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cocktail-info {
+    max-width: 100%;
+    padding: 1.3vw;
+  }
+
+  .cocktail-container img {
+    width: 100%;
+    margin-bottom: 1.7vh;
+  }
+}
+
+.opacity {
+  position: relative;
+  text-align: right;
+}
+
+.blur_image {
+  width: 100%; 
+  filter: blur(0.6vw);
+  opacity: 0.5;
+  transition: all 0.45s ease;
+}
+
+.img_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+/* 클릭 시 이미지 고정 (클릭 상태 유지) */
+.opacity.clicked .blur_image {
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.opacity.clicked .img_text {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.opacity:hover .blur_image {
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.opacity:hover .img_text {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+.button button {
+  margin-left: 1.5vw;
+  text-align: center;
+  background-color: #F5F5DC;
+  border: none;
+  padding: 10px 20px;
+  color: #464646;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);  
+}
+
+.button button:hover {
+  transform: scale(1.05);
+  background-color: #FFDAB9; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);  
+}
+
+.button button:active {
+  transform: translateY(2px); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+}
+
+.parallax {
+  background-image: url('C:/Users/User/Desktop/html/image/backgruond.jpg');
+  height: 500px;
+  background-attachment: fixed; /* 배경 고정 */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px; /* 3D 효과 */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d; /* 3D 유지 */
+  transition: transform 0.6s; /* 부드러운 전환 효과 */
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* 뒷면 숨기기 */
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg); /* 뒷면 회전 */
+}
+
+.flip-card-inner.flip {
+  transform: rotateY(180deg); /* 뒤집기 */
+}

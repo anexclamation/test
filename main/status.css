@@ -1,14 +1,8 @@
-/* 전체 레이아웃 설정 */
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('C:/Users/User/Desktop/html/image/backgruond.jpg');
-    color: #333;
-    line-height: 1.6;
+ h2 {
+    font-size: 1.8em;
+    color: #ebbe79;
+    margin-bottom: 20px;
   }
-  
-  /* 중앙 정렬 */
   .status {
     max-width: 600px;
     margin: 40px auto;
@@ -18,13 +12,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
-  h2 {
-    font-size: 1.8em;
-    color: #ebbe79;
-    margin-bottom: 20px;
-  }
-  
   /* 아코디언 버튼 스타일 */
   .accordion {
     background-color: #ff6f61;
